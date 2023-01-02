@@ -1,7 +1,8 @@
 import { Meta, Canvas, Story, Source } from "@storybook/addon-docs";
 import dedent from "ts-dedent";
+import "assets/css/index.css"
 
-import Sample from "./example/Sample.tsx";
+import Badge from "./example/Sample.tsx";
 
 <Meta title="Components/Badge" />
 
@@ -10,10 +11,6 @@ import Sample from "./example/Sample.tsx";
 This badge component is a reusable element that displays a small graphic or text label on top of its parent container. It can be used to highlight important information, such as the status of an item or the type of content being displayed. The badge component is built using React and is designed to be easily integrated into any application. It allows for customization of the badge text and appearance, including the ability to set a different background color or font style. This component is an essential part of our design system and is used extensively throughout our application to provide context and clarity to our users. [[Default Example](/docs/components-badge-example--success)] if you want to see in action.
 
 export const Template = (args) => <Badge {...args} />;
-
-Template.args = {
-    state:"success"
-}
 
 <Story name="Introduction" args={{}}>
   {Template.bind({})}
