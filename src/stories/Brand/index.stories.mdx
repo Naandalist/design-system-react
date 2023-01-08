@@ -1,0 +1,17 @@
+import { Meta, Canvas, Story, Source } from "@storybook/addon-docs";
+import dedent from "ts-dedent";
+import "assets/css/index.css"
+
+import Brand from "./example/Sample.tsx";
+
+<Meta title="Components/Brand" />
+
+# Brand
+
+A most import component that simply let user interact with the app, [Default Example] if you want to see in action
+
+export const Template = (args) => <Brand {...args} />;
+
+<Story name="Introduction" args={{}}>
+  {Template.bind({})}
+</Story>
