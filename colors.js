@@ -10,6 +10,8 @@ const colors = {
   navy: "#211B3D",
   "soft-purple": "#F5EFFF",
   purple: "#7839F3",
+  "soft-grey": "#D2D1DA",
+  grey: "#5B5575",
 };
 
 module.exports = colors;
